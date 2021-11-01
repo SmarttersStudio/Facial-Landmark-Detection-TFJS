@@ -74,21 +74,28 @@ function App() {
 
   return (
     <div className="App">
+
+        <img src={'Logo.png'} height={50}/>
+        <div>Technology by: Athr</div>
+
       <header className="App-header">
-        <Webcam
-          ref={webcamRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 9,
-            width: 640,
-            height: 480,
-          }}
-        />
+
+              <Webcam
+                  ref={webcamRef}
+                  style={{
+                      position: "absolute",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      left: 0,
+                      right: 0,
+                      textAlign: "center",
+                      zindex: 9,
+                      width: 640,
+                      height: 480,
+                  }}
+              />
+
+
 
         <canvas
           ref={canvasRef}
